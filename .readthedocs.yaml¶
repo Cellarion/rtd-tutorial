@@ -11,9 +11,14 @@ sphinx:
 formats:
   - pdf
   - epub
-  
+
 python:
   # Install our python package before building the docs
+  version: "3.9"
   install:
     - method: pip
       path: .
+
+# Build documentation in the docs/ directory with Sphinx
+# sphinx:
+#  configuration: docs/source/conf.py
